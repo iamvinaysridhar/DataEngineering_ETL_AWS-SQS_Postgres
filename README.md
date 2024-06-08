@@ -45,17 +45,20 @@ bash
 psql -d postgres -U postgres -p 5432 -h localhost -W
 SELECT * FROM user_logins;
 
-
-Configuration
-
+6. Configuration
 
 SQS Queue URL: http://localhost:4566/000000000000/login-queue
 
 Postgres Credentials:
+
 Database: postgres
+
 User: postgres
+
 Password: postgres
+
 Host: localhost
+
 Port: 5432
 
 Assumptions
