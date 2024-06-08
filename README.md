@@ -47,6 +47,8 @@ SELECT * FROM user_logins;
 
 
 Configuration
+
+
 SQS Queue URL: http://localhost:4566/000000000000/login-queue
 
 Postgres Credentials:
