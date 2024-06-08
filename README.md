@@ -5,8 +5,11 @@ This application reads JSON data from an AWS SQS queue, masks PII fields, and wr
 Ensure you have Docker, Docker Compose, AWS CLI Local, and PSQL installed.
 
 Install Docker
+
 Install Docker Compose
+
 Install AWS CLI Local: pip install awscli-local
+
 Install PSQL
 
 2. Create Docker Compose File
