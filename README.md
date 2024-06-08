@@ -45,7 +45,10 @@ bash
 psql -d postgres -U postgres -p 5432 -h localhost -W
 SELECT * FROM user_logins;
 
-6. Configuration
+
+
+
+   Configuration:-
 
 SQS Queue URL: http://localhost:4566/000000000000/login-queue
 
@@ -61,24 +64,23 @@ Host: localhost
 
 Port: 5432
 
-Assumptions
+Assumptions:-
 1. The SQS queue and Postgres database are accessible locally through Docker containers.
 2. Sensitive PII fields like device_id and ip are hashed using SHA-256 to easily identify duplicates.
 
-Future Improvements
+Future Improvements:-
 
 1. Improve error handling and logging mechanisms.
 2. Use environment variables instead of hard-coding configuration values.
 3. Write unit and integration tests for better code coverage and quality.
 4. Set up a CI/CD pipeline like Jenkins for automated builds and deployments.
 
-Scaling
-
+Scaling:-
 1. For handling large volumes of data, use a scalable message broker like Kafka instead of SQS.
 2. Implement batch processing of messages for improved throughput.
 3. Optimize database operations by indexing frequently queried columns and tables.
 
-PII Recovery
+PII Recovery:-
 1. Store original unhashed PII data in an encrypted form for potential recovery later.
 2. If PII recovery is needed, use a reversible hashing technique like bcrypt instead of SHA-256.
 
